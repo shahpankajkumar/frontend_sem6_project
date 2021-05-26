@@ -4,6 +4,7 @@ import Notifications from "views/feedback";
 // import Typography from "views/Typography.js";
 import TableList from "views/TableList.js";
 import OwnerManage from "views/OwnerManege";
+import userManage from "views/userManege";
 // import Maps from "views/Maps.js";
 // import Upgrade from "views/Upgrade.js";
 // import UserPage from "views/UserPage.js";
@@ -48,6 +49,13 @@ var dashRoutes = [
     name: "Manage owners",
     icon: "business_badge",
     component: OwnerManage,
+    layout: "/admin",
+  },
+  {
+    path: "/user-manage",
+    name: "users",
+    icon: "business_badge",
+    component: userManage,
     layout: "/admin",
   },
   {

@@ -1,19 +1,13 @@
 import React from 'react'
 import styles from './HeaderNav.module.css';
-import { NavLink,useHistory} from 'react-router-dom'
-import { NavDropdown } from 'react-bootstrap';
+import { NavLink,} from 'react-router-dom'
+
  
 
 export default function HeaderNav (props) {
 
- 
-  const history=useHistory();
-  function logout ()
-  {
-    localStorage.clear();      
-    history.push('/visitor')
 
-  }
+
     return (
 
       <header>
@@ -29,15 +23,7 @@ export default function HeaderNav (props) {
 
           </div>
 
-        </nav>
-      
-       <nav>
-
-              <NavDropdown.Item className={styles.registerBtn} onclick={logout}>logout</NavDropdown.Item>
-           
-       </nav>
-
-       
+        </nav>   
       </header>
 
 
